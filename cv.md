@@ -53,3 +53,7 @@ function spinWords(string){
 
 }
 ~~~
+
+## Languages:
+1. English - Pre-Intermediate (I practice English every day for 1 hour);
+2. Russian - native.
