@@ -1,0 +1,177 @@
+* {
+    /*border: 1px solid red;*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2f2f2f;
+    color: #3f3f3e;
+}
+
+img {
+    max-width: 450px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Rubik', sans-serif;
+}
+
+a {
+    color: #3f3f3e;
+    font-weight: 700;
+}
+/*главный контейнер, в котором будет располагаться всю содержание. Поможет избежать просветов с бэкгроунда*/
+.main_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: auto;
+    z-index: 0;
+    background: url("../img/background.png");
+}
+
+/*блок/ шапка резюме*/
+header {
+    z-index: 1;
+    display: flex;
+    width: 1400px;
+    position: relative;
+    height: 350px;
+
+    background: url("../img/header_back.png");
+}
+
+/*разбираемся с фоткой профиля*/
+.resume_photo {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+/*размещаем эмблемку*/
+.graphic_circle {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+}
+
+/*текстовая арка*/
+#arc {
+    height: 0.92921em;
+
+    font-size: 21px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+
+}
+
+
+
+/*переворачиваем текст*/
+.header_name {
+    position: absolute;
+    top: 66%;
+    right: 0%;
+
+    transform: rotate(90deg);
+
+}
+
+div.full_name>h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.name_of_resume {
+    padding-top: 18px;
+}
+
+hr {
+    position: absolute;
+    top: 84px;
+    left: 345px;
+    height: 19px;
+    width: 93px;
+    background-color: #3f3f3e;
+    border: none;
+
+
+}
+
+
+/*главная инфа в резюме*/
+.main {
+    background: url("../img/background.png");
+}
+
+.main_info {
+    /*height: 500px;*/
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+/*блок обо мне*/
+.main_block {
+    width: 500px;
+    margin: 200px 0 0 141px;
+}
+
+.about_me {
+    padding: 50px 0 20px 0;
+
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.text_about_me {
+    text-align: justify;
+}
+
+
+/*дополнительная панель с контактами, навыками и уровнем языка*/
+.add_info {
+    margin-left: 200px;
+}
+
+ul.contacts, ul.lang {
+    list-style-type: none;
+}
+
+/*футер*/
+footer {
+    z-index: 1;
+    display: flex;
+    width: 1400px;
+    position: relative;
+    height: 250px;
+
+    background: url("../img/header_back.png");
+}
+
+.my_github {
+    position: absolute;
+    right: 70%;
+    top: 40%;
+}
+
+.year_of_publish {
+    position: absolute;
+    top: 40%;
+    right: 50%;
+}
+
+.link_of_course {
+    position: absolute;
+    top: 35%;
+    right: 22%;
+}
+}
