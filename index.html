@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CV -- Margarita Okenchits</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+<body>
+<div class="main_container">
+    <div class="container">
+        <header>
+            <div class="resume_photo">
+                <img src="img/photo.png" alt="my photo" height="450">
+            </div>
+            <div class="graphic_circle">
+                <div id="arc" class="decorative_text">
+                    Resume since 2021
+                </div>
+                <img class="decorative_limb" src="img/decorative_el.png" alt="decorative element" width="185">
+            </div>
+            <div class="header_name">
+                <div class="full_name">
+                    <h1>Rita Okenchits</h1>
+                </div>
+                <h2 class="name_of_resume">Junior Full-stack Developer</h2>
+                <hr>
+            </div>
+        </header>
+    </div>
+
+    <div class="container main">
+        <div class="main_info">
+            <div class="main_block">
+                <h2 class="about_me">About me</h2>
+                <p class="text_about_me">
+                    In 2021 I received my BA in Psychology and Social Work. <br>
+                    For 4 years of study I have achieved great success: I was nominated for the title "The best graduate
+                    of BSU", received a diploma with honors and more.
+                    Since 2015, programming has been just a hobby. But now I have serious intentions to change the field
+                    of activity.</p>
+                <h2 class="about_me">Work Experience</h2>
+                <div class="experience"> For July 2021 I:
+                    <ol>
+                        <li> completed 1 freelance order. I created a <a href="https://skvazzhin.by/">landing page</a>,
+                            placed it on the server and set up
+                            mail.
+                        </li>
+                        <li> created a web application for librarians. Within the framework of the project, I learned to
+                            work with Oracle, Java, Spring, Js (sorry, but I don't have a link to this project yet. It's
+                            coming soon).
+                        </li>
+                    </ol>
+                </div>
+                <h2 class="about_me">Code Example</h2>
+                <div class="text_conditions">
+                    <p>
+                        Task: write a function that takes in a string of one or more words, and returns the same string,
+                        but with all five or more letter words reversed (like the name of this kata).
+                    </p>
+                    <ul>
+                        <li>Strings passed in will consist of only letters and spaces.</li>
+                        <li>Spaces will be included only when more than one word is present.</li>
+                    </ul>
+                </div>
+                <div class="code_example">
+                        <pre>
+                            <code>
+ function reverseWord(str) {
+    var newString = "";
+    for (var g = str.length - 1; g >= 0; g--) {
+        newString += str[g];
+    }
+    return newString;
+}
+
+function spinWords(string){
+    let i = string;
+
+    let o = i.split(" ");
+
+    for (var j = 0; j &lt; o.length; j++) {
+        if (o[j].length >= 5) {
+            o[j] = reverseWord(o[j]);
+        }
+    }
+
+    return o.join(" ");
+
+}
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+
+            <aside class="add_info">
+                <h2 class="about_me">Contacts</h2>
+                <ul class="contacts">
+                    <li>Phone: <b>+375 29 772 88 45</b></li>
+                    <li>E-mail: <b>agreatpie@gmail.com</b></li>
+                    <li>Telegram: <b>@Tomato_tomatos</b></li>
+                </ul>
+                <h2 class="about_me">Skills and Proficiency</h2>
+                <ul>
+                    <li>HTML5, CSS3</li>
+                    <li>JavaScript Basics</li>
+                    <li>Git, GitHub</li>
+                    <li>SQL, Oracle</li>
+                    <li>Java, Spring</li>
+                    <li>Postman</li>
+                    <li>Figma, Adobe Photoshop</li>
+                    <li> Web Storm, IntelliJ IDEA</li>
+                </ul>
+                <h2 class="about_me">Languages</h2>
+                <ul class="lang">
+                    <li>English - Pre-Intermediate (I practice English every week).</li>
+                    <li>Russian - native.</li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+    <div class="main_container">
+        <div class="container">
+            <footer>
+                <div class="my_github">
+                    <a href="https://github.com/MargaritaOkenchits">My GitHub</a>
+                </div>
+                <div class="year_of_publish">2021</div>
+                <div class="link_of_course">
+                    <a href="https://rs.school/js/">
+                        <img src="img/logo_rss.png" alt="logo_rss">
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+</div>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/circletype.min.js"></script>
+<script src="js/prism.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
